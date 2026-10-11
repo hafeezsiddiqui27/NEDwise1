@@ -49,7 +49,7 @@ export function MobileSidebar({ open, onClose, ...sidebarProps }: MobileSidebarP
           <button 
             onClick={onClose} 
             aria-label="Close navigation" 
-            className="rounded-lg p-2 hover:bg-slate-100 cursor-pointer"
+            className="rounded-lg p-2 bg-white cursor-pointer"
           >
             <X size={18} />
           </button>
