@@ -1,8 +1,35 @@
 
+# # # fastapi
+# # # uvicorn[standard]
+# # # python-dotenv
+# # # youtube-transcript-api
+# # # langchain-core
+# # # langchain-text-splitters
+# # # langchain-community
+# # # langchain-huggingface
+# # # langchain-openai
+# # # sentence-transformers
+# # # faiss-cpu
+# # # pypdf
+
+# # fastapi
+# # uvicorn[standard]
+# # python-dotenv
+# # python-multipart
+# # pydantic
+# # youtube-transcript-api
+# # langchain-core
+# # langchain-text-splitters
+# # langchain-community
+# # langchain-huggingface
+# # langchain-openai
+# # sentence-transformers
+# # faiss-cpu
+# # pypdf
 # fastapi
 # uvicorn[standard]
 # python-dotenv
-# youtube-transcript-api
+# python-multipart
 # langchain-core
 # langchain-text-splitters
 # langchain-community
@@ -13,16 +40,7 @@
 # pypdf
 
 fastapi
-uvicorn[standard]
-python-dotenv
 python-multipart
-pydantic
-youtube-transcript-api
-langchain-core
-langchain-text-splitters
-langchain-community
-langchain-huggingface
-langchain-openai
-sentence-transformers
-faiss-cpu
+httpx
 pypdf
+beautifulsoup4
