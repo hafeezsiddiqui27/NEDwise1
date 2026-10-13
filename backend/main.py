@@ -3400,15 +3400,18 @@ async def chat_with_document(data: ChatRequest):
 
     # Build clean context without exposing source locations
     context_parts = []
-
     for item in matches:
-        content = item.get("content", "").strip()
+       content = (item.get("content") or "").strip()
+       if content:
+           context_parts.append(content)
 
-    if content:
-        context_parts.append(content)
+    context = "\n\n".join(context_parts)
 
-        context = "\n\n".join(context_parts)
-
+    if not context:
+       return {
+        "answer": "The answer was not found in the selected document or web source.",
+        "file_id": file_id,
+     }
     logger.info(
         "[RETRIEVAL SUCCESS] file_id=%s chunks=%s context_chars=%s",
         file_id,
