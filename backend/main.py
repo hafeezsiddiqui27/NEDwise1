@@ -3493,3 +3493,4 @@ async def chat_with_document(data: ChatRequest):
         "answer": answer,
         "file_id": file_id,
     }
+#done
