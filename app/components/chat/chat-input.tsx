@@ -1,12 +1,11 @@
 
-
 "use client";
 
 import { FormEvent, useRef, useState } from "react";
 import { ArrowUp, Paperclip, X, FileText } from "lucide-react";
 
 type Props = {
-  onSend: (message: string) => void;
+  onSend: (message: string, file: File | null) => void;
   disabled?: boolean;
 };
 
@@ -17,35 +16,46 @@ export function ChatInput({ onSend, disabled = false }: Props) {
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-
     const trimmed = value.trim();
 
     if (!trimmed || disabled) return;
 
-    onSend(trimmed);
+    // Send the message and the attached file up to the parent
+    onSend(trimmed, selectedFile);
+    
+    // Clear input and file selection after sending
     setValue("");
+    setSelectedFile(null);
+    if (fileInputRef.current) {
+      fileInputRef.current.value = "";
+    }
   }
 
-  function handleFileChange(
-    event: React.ChangeEvent<HTMLInputElement>
-  ) {
+  function handleFileChange(event: React.ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0];
-
-    if (file && file.type === "application/pdf") {
-      setSelectedFile(file);
+    if (file) {
+      const extension = file.name.split(".").pop()?.toLowerCase();
+      
+      // Allow only PDF, CSV, or TXT
+      if (["pdf", "csv", "txt"].includes(extension || "")) {
+        setSelectedFile(file);
+      } else {
+        alert("Please select a valid PDF, CSV, or TXT file.");
+      }
     }
-
-    // Allow selecting the same file again.
     event.target.value = "";
   }
 
   function removeFile() {
     setSelectedFile(null);
-
     if (fileInputRef.current) {
       fileInputRef.current.value = "";
     }
   }
+
+  const fileExtension = selectedFile
+    ? selectedFile.name.split(".").pop()?.toUpperCase() || "FILE"
+    : "";
 
   return (
     <div className="mx-auto mt-0 w-full max-w-3xl px-4 sm:px-8">
@@ -53,7 +63,6 @@ export function ChatInput({ onSend, disabled = false }: Props) {
         onSubmit={handleSubmit}
         className="rounded-2xl border border-slate-200 bg-white p-2 shadow-sm transition focus-within:border-slate-400 focus-within:shadow-md"
       >
-        {/* Selected PDF preview */}
         {selectedFile && (
           <div className="mb-2 flex items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 p-3">
             <div className="grid size-10 shrink-0 place-items-center rounded-lg bg-white text-slate-700">
@@ -65,7 +74,7 @@ export function ChatInput({ onSend, disabled = false }: Props) {
                 {selectedFile.name}
               </p>
               <p className="text-xs text-slate-500">
-                PDF · {(selectedFile.size / (1024 * 1024)).toFixed(2)} MB
+                {fileExtension} · {(selectedFile.size / (1024 * 1024)).toFixed(2)} MB
               </p>
             </div>
 
@@ -73,7 +82,7 @@ export function ChatInput({ onSend, disabled = false }: Props) {
               type="button"
               onClick={removeFile}
               disabled={disabled}
-              aria-label="Remove selected PDF"
+              aria-label="Remove selected file"
               className="grid size-8 shrink-0 place-items-center rounded-lg text-slate-500 transition hover:bg-slate-200 hover:text-slate-900 disabled:opacity-50"
             >
               <X size={16} />
@@ -101,11 +110,10 @@ export function ChatInput({ onSend, disabled = false }: Props) {
             <input
               ref={fileInputRef}
               type="file"
-              accept=".pdf,application/pdf"
               onChange={handleFileChange}
               disabled={disabled}
               className="hidden"
-              aria-label="Choose a PDF document"
+              aria-label="Choose a document"
             />
 
             <button
@@ -115,7 +123,7 @@ export function ChatInput({ onSend, disabled = false }: Props) {
               className="flex items-center gap-2 rounded-lg px-2 py-2 text-xs text-slate-500 transition hover:bg-slate-100 hover:text-slate-800 disabled:cursor-not-allowed disabled:opacity-50"
             >
               <Paperclip size={15} />
-              <span>{selectedFile ? "Change PDF" : "Upload PDF"}</span>
+              <span>{selectedFile ? "Change Document" : "Upload Document"}</span>
             </button>
           </div>
 

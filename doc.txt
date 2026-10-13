@@ -1,0 +1,82 @@
+THE MYSTERY OF THE MISSING ROBOT
+
+Chapter 1: The Invention
+
+On 10 June 2026, a sixteen-year-old student named Zoya Ahmed built a small robot named Bolt in Karachi, Pakistan. Zoya was interested in robotics and artificial intelligence. She built Bolt for the annual Young Inventors Competition, which was scheduled for 25 June 2026.
+
+Bolt could recognize objects, follow simple voice commands, and move around obstacles. Zoya's science teacher, Mr. Salman Qureshi, helped her test the robot in the school's science laboratory.
+
+Zoya's best friend, Hamza Siddiqui, helped her write the robot's movement program. They spent three weeks improving Bolt's performance.
+
+Chapter 2: The Disappearance
+
+On 18 June 2026, Zoya placed Bolt inside a locked storage room at school. The room was located next to Laboratory 4. She locked the door at 4:30 PM and went home.
+
+The next morning, on 19 June, Zoya returned to school at 8:00 AM. She discovered that Bolt had disappeared. The storage room door was still locked, but a small window at the back of the room was open.
+
+Zoya immediately informed Mr. Salman Qureshi. He checked the school's security cameras and discovered that a delivery worker had entered the building at 6:15 PM on 18 June. However, the camera near the storage room was not working.
+
+Chapter 3: Three Clues
+
+Zoya and Hamza began investigating the disappearance. They found three important clues.
+
+The first clue was a muddy footprint near the open window. The footprint appeared to belong to a person wearing a size-nine shoe.
+
+The second clue was a blue thread caught on the window frame. Zoya remembered that the school's maintenance worker, Imran Shah, usually wore a blue uniform.
+
+The third clue was a delivery receipt found outside the building. It showed that a package had been delivered to the school's main entrance at 6:15 PM on 18 June.
+
+Hamza suggested that the delivery worker might have taken Bolt by mistake. Zoya, however, wanted to collect more evidence before reaching a conclusion.
+
+Chapter 4: The Truth
+
+On 20 June 2026, Mr. Salman Qureshi contacted the delivery company. The company confirmed that its worker, Bilal Khan, had delivered a box of laboratory equipment to the school.
+
+Bilal returned to the school that afternoon and explained that he had placed the box near the main entrance. He had not entered the storage room.
+
+Meanwhile, Imran Shah informed Zoya that he had repaired the window two days earlier. He had left a small piece of blue cloth on the window frame by accident.
+
+After examining the laboratory records, Hamza discovered that Bolt's backup battery had been removed during a routine test on 18 June. The robot could not operate without that battery.
+
+Zoya asked the school caretaker, Mr. Tariq, whether anyone had borrowed the battery. Mr. Tariq remembered seeing a student carrying a small electronic device toward the computer laboratory.
+
+The student was Ahmed Raza, a member of the school's robotics club.
+
+Chapter 5: The Missing Robot Found
+
+On 21 June 2026, Zoya and Mr. Salman Qureshi visited the computer laboratory. They found Bolt inside a cupboard, along with its backup battery.
+
+Ahmed Raza explained that he had borrowed Bolt to examine its object-recognition system. He had received permission from another robotics club member but had forgotten to inform Zoya.
+
+Ahmed had moved Bolt to the computer laboratory on the evening of 18 June. He had entered through the main entrance before the building closed and placed the robot in the cupboard.
+
+The open window and muddy footprint were unrelated to the disappearance. The blue thread had been left behind by Imran during the window repair.
+
+Ahmed apologized to Zoya and returned the robot. No theft had taken place.
+
+Chapter 6: The Competition
+
+On 25 June 2026, Zoya and Hamza presented Bolt at the Young Inventors Competition. Bolt successfully recognized five objects: a book, a bottle, a pencil, a chair, and a mobile phone.
+
+The judges awarded Zoya's team second place for its practical application of robotics and artificial intelligence.
+
+Zoya learned that collecting evidence was more reliable than making assumptions. She also added a tracking feature to Bolt so that its location could be identified in future.
+
+IMPORTANT FACTS
+
+Main character: Zoya Ahmed
+Zoya's best friend: Hamza Siddiqui
+Science teacher: Mr. Salman Qureshi
+Maintenance worker: Imran Shah
+Delivery worker: Bilal Khan
+Student who borrowed Bolt: Ahmed Raza
+School caretaker: Mr. Tariq
+Robot's name: Bolt
+City: Karachi, Pakistan
+Robot completed: 10 June 2026
+Robot disappeared: 19 June 2026
+Robot found: 21 June 2026
+Competition date: 25 June 2026
+Competition result: Second place
+Objects recognized by Bolt during competition: 5
+Main lesson: Evidence should be checked before making conclusions.

@@ -1,0 +1,16 @@
+id,name,department,semester,gpa,city
+1,Hamza Khan,CS,1,3.45,Karachi
+2,Ayesha Ali,AI,2,3.82,Lahore
+3,Usman Ahmed,CS,1,2.91,Islamabad
+4,Sara Malik,SE,3,3.67,Karachi
+5,Ali Raza,AI,2,3.15,Lahore
+6,Hina Shah,CS,4,3.91,Rawalpindi
+7,Bilal Hassan,SE,3,2.78,Karachi
+8,Maria Khan,AI,1,3.56,Islamabad
+9,Saad Ahmed,CS,2,3.24,Peshawar
+10,Noor Fatima,SE,4,3.88,Lahore
+11,Ahmed Raza,CS,2,2.65,Karachi
+12,Laiba Khan,AI,3,3.73,Multan
+13,Huzaifa Ali,SE,1,3.08,Islamabad
+14,Mehak Noor,CS,4,3.95,Karachi
+15,Daniyal Shah,AI,2,2.87,Peshawar
